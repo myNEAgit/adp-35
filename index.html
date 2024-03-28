@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Arts-Related Employment</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7687732/731826/css/fonts.css" /> -->
+  </head>
+
+  <body>
+    <div id="kig-widget">
+      <div class="container-fluid">
+        <!-- top title -->
+        <div class="title wrap">
+          <h1>ARTS ECONOMIES &amp; EMPLOYMENT (2022)</h1>
+        </div>
+        <!-- yellow section -->
+        <div class="wrap section-select">
+          <p class="help">Click on a state</p>
+          <div class="map"></div>
+          <div class="dropdown">
+            <button
+              class="btn btn-default dropdown-toggle"
+              type="button"
+              id="dropdownMenu1"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="true"
+            >
+              <span class="active-item">Alabama</span>
+              &nbsp;
+              <span class="caret"></span>
+            </button>
+            <ul
+              id="state-list"
+              class="dropdown-menu"
+              aria-labelledby="dropdownMenu1"
+            >
+              <!-- create dropdown items dynamically in javascript -->
+              <!-- <li><a role="button" data-state="' + d.properties.name + '">' + d.properties.name + '</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <!-- red section -->
+        <div class="wrap section-viz">
+          <div class="flex-wrap bottom-dots">
+            <div class="col right-dots">
+              <h1 id="billions" class="big-num">$XXB</h1>
+              <p class="num-label">
+                Value added to state’s economy by the arts
+              </p>
+            </div>
+            <div class="col">
+              <h1 id="percent" class="big-num">XX%</h1>
+              <p class="num-label">
+                Arts’ value-added as a share of state’s economy
+              </p>
+            </div>
+          </div>
+          <div class="flex-wrap flex-row">
+            <div class="col right-dots img-wrap">
+              <img src="res/img/money.svg" class="hidden-xs" />
+              <img
+                src="res/img/money-mobile.svg"
+                class="hidden-sm hidden-md hidden-lg"
+              />
+              <h1 id="compensation" class="big-num">$XXB</h1>
+              <p class="num-label">Arts worker compensation</p>
+            </div>
+            <div class="col right img-wrap">
+              <img src="res/img/employment.svg" alt="" />
+              <h1 id="employment" class="big-num">XX,XXX</h1>
+              <p class="num-label">Arts employment</p>
+            </div>
+          </div>
+        </div>
+        <!-- footer -->
+        <div class="footer wrap">
+          <p>
+            Arts and Cultural Production Satellite Account (ACPSA), 2021; U.S. Bureau of Economic Analysis, National Endowment for the Arts
+          </p>
+          <p class="italic">B = billions</p>
+        </div>
+      </div>
+    </div>
+    <!-- JS below -->
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
